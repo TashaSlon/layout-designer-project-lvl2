@@ -9,22 +9,22 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  color: #cacaca;
-  background-color: #08020d;
+  color: $medium-light;
+  background-color: $base-color;
 }
 
 h1 {
   font-size: 30px;
   line-height: 1.5em;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 18px;
   line-height: 1.5em;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 @media (min-width: 415px) {
@@ -32,13 +32,13 @@ h2 {
     font-size: 60px;
     line-height: 1.5em;
     font-weight: bold;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 38px;
     line-height: 1.5em;
     font-weight: bold;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 }

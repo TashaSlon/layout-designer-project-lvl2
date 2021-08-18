@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #CACACA;
+  background-color: #08020D;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 415px) {
+  h1 {
+    font-size: 60px;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  margin: 20px;
+  text-transform: uppercase;
+}
+header p {
+  margin-left: 16px;
+  font-size: 10px;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.nav {
+  padding: 0;
+  font-size: 11px;
+  list-style: none;
+}
+
+.search {
+  padding: 5px 10px;
+  background-color: #3C3B3D;
+  border-radius: 50px;
+  border: none;
+  width: 374px;
+}
+.search::placeholder {
+  color: #757575;
+  font-size: 13.3px;
+  text-transform: uppercase;
+}
+
+.hero {
+  margin: 200px auto;
+  text-align: center;
+}
+.hero h1 {
+  margin-bottom: 0;
+}
+.hero h2 {
+  margin: 0 auto;
+}
+.hero p {
+  margin: 31px auto 17px;
+}
+
+.form {
+  margin: auto;
+}
+.form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form input {
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+  border: #CACACA solid 2px;
+  border-radius: 3px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.form input::placeholder {
+  color: #ffffff;
+}
+.form .btn {
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: #34C176;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (min-width: 415px) {
+  header {
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav {
+    margin-left: 91px;
+    width: 311px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search {
+    width: 248px;
+  }
+
+  .hero {
+    max-width: 1240px;
+  }
+
+  .form {
+    max-width: 570px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
