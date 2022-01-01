@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <section class="header" id="page-description">
-        <header>
+    <header>
+        <section class="top" id="page-description">
             <div class="header-left">
-                <img src="images/logo.svg" alt="Logo Music box" width="24px" height="24px">
-                <p>Music box</p>
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Logo Music box" width="24px" height="24px">
+                    <p>Music box</p>
+                </div>
                 <ul class="nav">
                     <li>Главная</li>
                     <li>Каталог</li>
@@ -19,9 +21,11 @@
                     <li>Контакты</li>
                 </ul>
             </div>
-            <input class="search" placeholder="ПОИСК...">
-        </header>
-        <section class="hero">
+            <div class="header-search">
+                <input class="search" placeholder="ПОИСК...">
+            </div>
+        </section>
+        <section class="banner">
             <h1>Онлайн музыка где угодно</h1>
             <h2>без ограничений</h2>
             <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
@@ -33,6 +37,6 @@
                 <button type="submit" class="btn">Получить доступ</button>
             </form>
         </section>
-    </section>
+    </header>
 </body>
 </html>
