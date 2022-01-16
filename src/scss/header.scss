@@ -1,10 +1,5 @@
 @import "variables";
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 header {
   position: relative;
   padding: 0 0 201px;
@@ -49,16 +44,13 @@ header {
   list-style: none;
 }
 
-.header-search {
-  width: 374px;
-}
-
 .search {
   padding: 5px 10px;
-  width: 374px;
+  width: 100%;
   background-color: $dark;
   border-radius: 50px;
   border: none;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $medium-dark;
@@ -113,11 +105,7 @@ header {
 
   & .btn {
     width: 100%;
-    padding: 20px 30px;
-    border-radius: 5px;
-    background: $main-button;
-    color: $white;
-    text-transform: uppercase;
+    background-color: $main-button;
   }
 }
 
