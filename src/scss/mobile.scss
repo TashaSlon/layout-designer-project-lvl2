@@ -1,0 +1,53 @@
+@import "variables";
+
+.mobile {
+  clear: both;
+  margin: 0 auto 100px;
+  max-width: 1200px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  & > h2 {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mobile-text {
+  margin-top: 64px;
+  max-width: 600px;
+}
+
+.btn-additional {
+  float: left;
+  padding: 16px 40px;
+  background-color: $additional-color;
+  border-radius: 32px;
+  font-size: 12.8px;
+}
+
+.mobile-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+
+  & > img {
+    margin: auto;
+  }
+}
+
+@media (max-width: 414px) {
+  .mobile-main {
+    flex-direction: column-reverse;
+  }
+
+  .mobile-text {
+    margin-top: 16px;
+  }
+}

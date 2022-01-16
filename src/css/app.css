@@ -54,6 +54,12 @@ h3 {
   font-size: 16px;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media (min-width: 415px) {
   h1 {
     font-size: 60px;
@@ -369,6 +375,55 @@ header {
 
   .news-footer > .btn {
     margin-bottom: 64px;
+  }
+}
+.mobile {
+  clear: both;
+  margin: 0 auto 100px;
+  max-width: 1200px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mobile > h2 {
+  margin-bottom: 0;
+}
+
+.mobile-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mobile-text {
+  margin-top: 64px;
+  max-width: 600px;
+}
+
+.btn-additional {
+  float: left;
+  padding: 16px 40px;
+  background-color: #F89202;
+  border-radius: 32px;
+  font-size: 12.8px;
+}
+
+.mobile-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+.mobile-image > img {
+  margin: auto;
+}
+
+@media (max-width: 414px) {
+  .mobile-main {
+    flex-direction: column-reverse;
+  }
+
+  .mobile-text {
+    margin-top: 16px;
   }
 }
 
