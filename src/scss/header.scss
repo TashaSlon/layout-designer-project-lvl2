@@ -6,47 +6,61 @@ header {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-
   color: $white;
 }
 
 .top {
   position: absolute;
   top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   margin: auto;
   padding-right: 20px;
   padding-left: 20px;
   text-transform: uppercase;
-
-  & p {
-    margin-left: 16px;
-    font-size: 10px;
-  }
-}
-
-.header-left {
-  text-align: left;
-
-  & p {
-    white-space: nowrap;
-  }
+  font-size: 11px;
+  clear: right;
+  box-sizing: border-box;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
+  display: inline-block;
+
+  & > img {
+    position: relative;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  & > p {
+    display: inline-block;
+    margin: 0 90px 0 0;
+  }
 }
 
 .nav {
+  display: inline-block;
+  margin: 0;
   padding: 0;
-  font-size: 11px;
   list-style: none;
+
+  & > li {
+    display: inline;
+    margin-right: 24px;
+  }
+}
+
+.header-search {
+  margin-top: 8px;
 }
 
 .search {
   padding: 5px 10px;
-  width: 100%;
+  min-width: 248px;
   background-color: $dark;
   border-radius: 50px;
   border: none;
@@ -80,6 +94,7 @@ header {
 
 .form {
   margin: auto;
+  max-width: 570px;
 
   & div {
     display: flex;
@@ -88,7 +103,7 @@ header {
   }
 
   & input {
-    width: 100%;
+    width: 273px;
     min-height: 50px;
 
     padding-left: 20px;
@@ -108,6 +123,55 @@ header {
     background-color: $main-button;
   }
 }
+
+@media (max-width: 414px) {
+  .nav {
+    display: block;
+    margin-top: 17px;
+    margin-bottom: 18px;
+
+    & li {
+      display: block;
+    }
+  }
+
+
+  .header-search {
+    width: 100%;
+    margin: 0;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .form input {
+    width: 100%;
+  }
+}
+
+/*
+
+
+.header-left {
+  text-align: left;
+
+  & p {
+    white-space: nowrap;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+
+
+
+
+
 
 @media (min-width: 414px) {
   header {
@@ -157,4 +221,4 @@ header {
       max-width: 270px;
     }
   }
-}
+} */

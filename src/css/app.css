@@ -94,38 +94,52 @@ header {
 .top {
   position: absolute;
   top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   margin: auto;
   padding-right: 20px;
   padding-left: 20px;
   text-transform: uppercase;
-}
-.top p {
-  margin-left: 16px;
-  font-size: 10px;
-}
-
-.header-left {
-  text-align: left;
-}
-.header-left p {
-  white-space: nowrap;
+  font-size: 11px;
+  clear: right;
+  box-sizing: border-box;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
+  display: inline-block;
+}
+.logo > img {
+  position: relative;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.logo > p {
+  display: inline-block;
+  margin: 0 90px 0 0;
 }
 
 .nav {
+  display: inline-block;
+  margin: 0;
   padding: 0;
-  font-size: 11px;
   list-style: none;
+}
+.nav > li {
+  display: inline;
+  margin-right: 24px;
+}
+
+.header-search {
+  margin-top: 8px;
 }
 
 .search {
   padding: 5px 10px;
-  width: 100%;
+  min-width: 248px;
   background-color: #3C3B3D;
   border-radius: 50px;
   border: none;
@@ -155,6 +169,7 @@ header {
 
 .form {
   margin: auto;
+  max-width: 570px;
 }
 .form div {
   display: flex;
@@ -162,7 +177,7 @@ header {
   justify-content: space-between;
 }
 .form input {
-  width: 100%;
+  width: 273px;
   min-height: 50px;
   padding-left: 20px;
   margin-bottom: 1.5rem;
@@ -178,6 +193,52 @@ header {
   width: 100%;
   background-color: #34C176;
 }
+
+@media (max-width: 414px) {
+  .nav {
+    display: block;
+    margin-top: 17px;
+    margin-bottom: 18px;
+  }
+  .nav li {
+    display: block;
+  }
+
+  .header-search {
+    width: 100%;
+    margin: 0;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .form input {
+    width: 100%;
+  }
+}
+/*
+
+
+.header-left {
+  text-align: left;
+
+  & p {
+    white-space: nowrap;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+
+
+
+
+
 
 @media (min-width: 414px) {
   header {
@@ -202,9 +263,10 @@ header {
     margin-left: 91px;
     display: flex;
     justify-content: space-between;
-  }
-  .nav li {
-    margin-right: 12px;
+
+    & li {
+      margin-right: 12px;
+    }
   }
 
   .header-search {
@@ -221,11 +283,12 @@ header {
 
   .form {
     max-width: 570px;
+
+    & input {
+      max-width: 270px;
+    }
   }
-  .form input {
-    max-width: 270px;
-  }
-}
+} */
 .subscriptions {
   margin: 0 auto;
   max-width: 1200px;
@@ -449,7 +512,7 @@ header {
   padding: 0;
 }
 .map li {
-  min-width: 374px;
+  min-width: 270px;
   list-style: none;
 }
 .map h4 {
