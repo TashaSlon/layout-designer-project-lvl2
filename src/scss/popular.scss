@@ -1,0 +1,61 @@
+@import "variables";
+
+.popular-tracks {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 100px 20px 25px;
+  box-sizing: border-box;
+
+  & h2 {
+    text-align: left;
+  }
+}
+
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px 49px;
+  margin-top: 48px;
+}
+
+.popular-track {
+  clear: both;
+
+  & img {
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-right: 15px;
+  }
+}
+
+.track-info {
+  float: left;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.track-info-title {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.time {
+  float: right;
+}
+
+@media (max-width: 414px) {
+  .tracks {
+    display: block;
+  }
+
+  .popular-track img {
+    margin-bottom: 25px;
+  }
+}

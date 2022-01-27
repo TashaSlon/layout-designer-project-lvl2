@@ -23,6 +23,7 @@ h1 {
 }
 
 h2 {
+  margin: 0;
   font-size: 18px;
   line-height: 1.5em;
   font-weight: bold;
@@ -31,11 +32,19 @@ h2 {
 }
 
 h3 {
+  margin: 0;
   font-size: 16px;
   line-height: 1.5em;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+}
+
+.layout {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .btn {
@@ -58,6 +67,7 @@ h3 {
 
 @media (min-width: 415px) {
   h1 {
+    margin: 0;
     font-size: 60px;
     line-height: 1.5em;
     font-weight: bold;
@@ -65,6 +75,7 @@ h3 {
   }
 
   h2 {
+    margin: 0;
     font-size: 38px;
     line-height: 1.5em;
     font-weight: bold;
@@ -72,6 +83,7 @@ h3 {
   }
 
   h3 {
+    margin: 0;
     font-size: 24px;
     line-height: 1.5em;
     font-weight: normal;
@@ -93,13 +105,6 @@ header {
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
-}
-
-.layout {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .top {
@@ -479,6 +484,7 @@ header {
 }
 .bg-gradient {
   padding-bottom: 1px;
+  padding-left: 0;
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 .bg-gradient a {
@@ -490,11 +496,13 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 3rem auto;
+  margin: 3rem 0;
   max-width: 1240px;
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
+  text-align: left;
 }
 .map ul {
   padding: 0;
@@ -539,6 +547,63 @@ nav > ul > li {
 @media (max-width: 414px) {
   nav > ul > li {
     display: block;
+    text-align: left;
+  }
+}
+.popular-tracks {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 100px 20px 25px;
+  box-sizing: border-box;
+}
+.popular-tracks h2 {
+  text-align: left;
+}
+
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px 49px;
+  margin-top: 48px;
+}
+
+.popular-track {
+  clear: both;
+}
+.popular-track img {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin-right: 15px;
+}
+
+.track-info {
+  float: left;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.track-info p {
+  margin: 0;
+}
+
+.track-info-title {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.time {
+  float: right;
+}
+
+@media (max-width: 414px) {
+  .tracks {
+    display: block;
+  }
+
+  .popular-track img {
+    margin-bottom: 25px;
   }
 }
 
