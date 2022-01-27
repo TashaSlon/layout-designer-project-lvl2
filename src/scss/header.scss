@@ -1,61 +1,74 @@
 @import "variables";
 
 header {
-  position: relative;
   padding: 0 0 201px;
+  color: $white;
+}
+
+.header-main {
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-  color: $white;
+}
+
+.header-artist {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.layout {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .top {
   position: absolute;
   top: 25px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
-  padding-right: 20px;
-  padding-left: 20px;
   text-transform: uppercase;
   font-size: 11px;
-  clear: right;
   box-sizing: border-box;
 }
 
 .logo {
-  display: inline-block;
+  width: 150px;
+  float: left;
+  box-sizing: border-box;
 
   & > img {
-    position: relative;
-    top: 6px;
     width: 24px;
     height: 24px;
+    float: left;
     margin-right: 16px;
+    box-sizing: border-box;
   }
 
   & > p {
-    display: inline-block;
     margin: 0 90px 0 0;
+    float: left;
+    box-sizing: border-box;
   }
 }
 
 .nav {
-  display: inline-block;
+  width: 350px;
   margin: 0;
   padding: 0;
+  float: left;
   list-style: none;
 
   & > li {
     display: inline;
     margin-right: 24px;
+    box-sizing: border-box;
   }
 }
 
 .header-search {
   margin-top: 8px;
+  float: right;
 }
 
 .search {
@@ -73,7 +86,7 @@ header {
   }
 }
 
-.banner {
+.banner-main {
   margin: 0 20px 0;
   padding-top: 250px;
   text-align: center;
@@ -90,6 +103,10 @@ header {
   & p {
     margin: 31px auto 17px;
   }
+}
+
+.banner-artist {
+  padding: 200px 20px;
 }
 
 .form {
@@ -124,6 +141,47 @@ header {
   }
 }
 
+.icon-heart {
+  width: 20px;
+  height: 18px;
+  fill: $white;
+}
+
+.icon-play {
+  width: 20px;
+  height: 20px;
+  fill: $white;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.btn-purple {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin-right: 24px;
+  background-color: $purple-button;
+
+  & svg {
+    margin-right: 16px;
+  }
+}
+
+.btn-orange {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  background-color: $orange-button;
+
+  & svg {
+    margin-right: 16px;
+  }
+}
+
 @media (max-width: 414px) {
   .nav {
     display: block;
@@ -148,77 +206,12 @@ header {
   .form input {
     width: 100%;
   }
-}
 
-/*
+  .banner-artist {
+    padding: 225px 20px;
+  }
 
-
-.header-left {
-  text-align: left;
-
-  & p {
-    white-space: nowrap;
+  .btn-orange {
+    margin-top: 24px;
   }
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-
-
-
-
-
-
-@media (min-width: 414px) {
-  header {
-    display: flex;
-    justify-content: center;
-  }
-
-  .top {
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .header-left {
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-  }
-
-  .nav {
-    margin-left: 91px;
-    display: flex;
-    justify-content: space-between;
-
-    & li {
-      margin-right: 12px;
-    }
-  }
-
-  .header-search {
-    margin-left: auto;
-  }
-
-  .search {
-    margin-right: 0;
-  }
-
-  .banner {
-    padding-top: 200px;
-  }
-
-  .form {
-    max-width: 570px;
-
-    & input {
-      max-width: 270px;
-    }
-  }
-} */
